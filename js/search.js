@@ -11,6 +11,5 @@ function search() {
       counter++;
     }
   });
-
   document.getElementById("result").innerText = counter + " Mach found  ";
 }
