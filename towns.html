@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.Selectable Cities</title>
+    <style>
+        li {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid #CCC;
+      
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        li.selected {
+            color: #111;
+            font-weight: bold;
+            border: 1px solid #AAA;
+            background: #BBB;
+        }
+
+        li:hover {
+
+            cursor: pointer;
+            background-color: rgb(208, 235, 235);
+
+        }
+
+        li.selected::after {
+            background-color: rgb(221, 15, 15);
+        }
+
+        ul {
+            padding: 0;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/select-towns.js"></script>
+</head>
+
+<body>
+    <h2>Cities</h2>
+    <ul id="items">
+        <li>Stockholm</li>
+        <li>Göteborg</li>
+        <li>Malmö</li>
+        <li>Uppsala</li>
+        <li>Umeå</li>
+    </ul><button id="showTownsButton">Show Cities</button>
+    <div id="selectedTowns">
+    </div>
+    <script>$(attachEvents())</script>
+</body>
+
+</html>

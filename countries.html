@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>countries</title>
+    <style>
+        td,
+        th {
+            background: #DDD;
+            padding: 5px 10px
+        }
+
+        input[type='text'] {
+            width: 60px
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/initialize-table.js"></script>
+</head>
+
+<body>
+    <table id="countriesTable">
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="newCountryText" placeholder="Country" /></td>
+            <td><input type="text" id="newCapitalText" placeholder="Capital"/></td>
+            <td><a href="#" id="createLink">[Create]</a></td>
+        </tr>
+
+
+
+    </table>
+
+
+
+    <script>$(() => initializeTable())</script>
+</body>
+
+</html>
